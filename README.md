@@ -43,7 +43,7 @@ XML is a bit redundant so I propose that we use YAML.
               url: http://en.wikipedia.org/wiki/Metaverse
 
 
-    org/sim/objs/1
+  org/sim/objs/1
 
   base: org/sim
   dimension: real
