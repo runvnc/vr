@@ -43,6 +43,7 @@ XML is a bit redundant so I propose that we use YAML.
           - webview:
               name: John's Smart TV
               url: http://en.wikipedia.org/wiki/Metaverse
+              position: [100, 400, 50]
 
 
   org/sim/objs/1
