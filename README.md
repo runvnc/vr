@@ -70,7 +70,7 @@ Maybe for data contents use something with YAML for a change from XML.
       velocity: [ 0.5, 0.0, 0.0 ]
 ```
 
-The idea with the "procedures:" thing is to take advantage of YAML's flexibility in order to create a language independent representation of an algorithm for doing simple procedural generation. It would be designed in such a way as to make it easy to generate code from the data tree in different languages like C, C++, Nim(rod), Java, Python, GLSL, whatever, or to create an interpreter if desired. That would be compiled on the fly and loaded as a sort of plugin.
+The idea with the "procedures:" thing is to take advantage of YAML's flexibility in order to create a language independent representation of an algorithm for doing simple procedural generation. It would be designed in such a way as to make it easy to generate code from the data tree in different languages like C, C++, Nim(rod), Java, Python, GLSL, whatever. That would be compiled on the fly and loaded as a sort of plugin, or simply interpreted.
 
 
 
