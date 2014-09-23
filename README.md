@@ -1,3 +1,5 @@
+# Simple Metaverse Protocol Proposal
+
 After seeing the level to which http://lucidscape.com/ has gone, I would like to present an alternative view.
 
 Their proposal seems to be about maximizing things like performance and massive scale in terms of objects across servers.  I'm not sure we need to start by emphasizing those things. Maybe we don't need to have the most advanced open source 3d networking game engine out there as a protocol.  Maybe we just need something simple to implement that has some key features of the metaverse and allows for clients to communicate.
