@@ -74,6 +74,7 @@ XML is a bit redundant so I propose that we use YAML.
   update:
     acceleration: [ 0.25, 1.0, 0.0 ]
     velocity: [ 0.5, 0.0, 0.0 ]
+    position: [ 13, 123, 0 ]
 ```
 
 The idea with the "procedures:" thing is to take advantage of YAML's flexibility in order to create a language independent representation of an algorithm for doing simple procedural generation. It would be designed in such a way as to make it easy to generate code from the data tree outputting to different languages like C, C++, Nim(rod), Java, Python, GLSL, whatever. That would be compiled on the fly and loaded as a sort of plugin, or simply run through an interpreter (compiling would execute faster obviously).  This way we don't force anyone to embed a particular scripting language (or code their whole application with it).  My example shows for loops with code blocks that contain function calls.
