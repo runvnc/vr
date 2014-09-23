@@ -1,6 +1,6 @@
 Maybe we don't have to have the most advanced open source 3d networking game engine out there as a protocol.
 
-So my idea uses an emerging standard (NDN) for efficiently distributing information and updates about the metaverse, an easy to read standard in YAML for describing the details, includes the concept of portals linking between worlds (you gotta have portals, they are one of the coolest things about the metaverse), includes the idea of embedded webviews (too much awesome stuff on the web to leave that out of the metaverse browser), a YAML-format for encoding algorithms that can be easily translated to common languages and compiled on the fly, and operational transformations for informing other clients about operations on the world state.
+So my idea uses an emerging standard (NDN) for efficiently distributing information and updates about the metaverse, an easy to read standard in YAML for describing the details, includes the concept of portals linking between worlds (you gotta have portals, they are one of the coolest things about the metaverse), includes the idea of embedded webviews (too much awesome stuff on the web to leave that out of the metaverse browser), a YAML-format for encoding algorithms that can be easily translated to common languages and compiled on the fly, and updates for informing other clients about operations on the world state.
 
 
 Maybe we can start by building off of Named Data Networking (NDN) http://named-data.net/doc/NDN-TLV/current/
@@ -66,14 +66,11 @@ Maybe for data contents use something with YAML for a change from XML.
     timestamp: xxxxxxxxxxxx
     which: name/smith/john50/me
     update:
-      operation: impulse
-      vector: [ 0.25, 1.0, 0.0 ]
-      startstate:
-        velocity: [ 0.5, 0.0, 0.0 ]
+      acceleration: [ 0.25, 1.0, 0.0 ]
+      velocity: [ 0.5, 0.0, 0.0 ]
 ```
 
 The idea with the "procedures:" thing is to take advantage of YAML's flexibility in order to create a language independent representation of an algorithm for doing simple procedural generation. It would be designed in such a way as to make it easy to generate code from the data tree in different languages like C, C++, Nim(rod), Java, Python, whatever. That would be compiled on the fly and loaded as a sort of plugin.
 
-Then rather than doing simple state updates, it uses operational transformations like saying "at time A force B was applied to this object and its velocity before that was C".
 
 
